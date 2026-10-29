@@ -3,7 +3,7 @@ import { ProductImage } from "@/components/products/product-image";
 import { btnGold } from "@/components/home/styles";
 
 const GIFT_IMAGE =
-  "https://images.pexels.com/photos/32817141/pexels-photo-32817141.jpeg?auto=compress&cs=tinysrgb&h=650&w=940";
+  "https://images.pexels.com/photos/33711972/pexels-photo-33711972.jpeg";
 
 export function GiftSetsSection() {
   return (

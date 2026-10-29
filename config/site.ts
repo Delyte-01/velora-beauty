@@ -4,9 +4,9 @@ export const siteConfig = {
   description:
     'Carefully selected hair, fragrance, skincare, and beauty essentials delivered with care across Nigeria.',
   announcement: 'Your beauty essentials, delivered with care.',
-  email: 'hello@velorabeauty.ng',
-  phone: '+234 801 234 5678',
-  whatsappNumber: '2348012345678',
+  email: 'delyteSam@gmail.com',
+  phone: '+234 813 976 0048',
+  whatsappNumber: '2348139760048',
   address: '12 Adeola Odeku Street, Victoria Island, Lagos, Nigeria',
   social: {
     instagram: 'https://instagram.com',
