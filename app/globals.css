@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 30% 97%;
+    --foreground: 330 15% 8%;
+    --card: 0 0% 100%;
+    --card-foreground: 330 15% 8%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 330 15% 8%;
+
+    --primary: 330 20% 9%; /* noir plum */
+    --primary-foreground: 40 30% 97%;
+    --secondary: 36 25% 93%; /* champagne mist */
+    --secondary-foreground: 330 15% 8%;
+    --muted: 36 15% 91%;
+    --muted-foreground: 330 6% 40%;
+    --accent: 40 48% 55%; /* champagne gold */
+    --accent-foreground: 330 15% 8%;
+
+    --burgundy: 343 56% 25%;
+    --burgundy-foreground: 40 30% 97%;
+    --gold-text: 36 55% 33%; /* readable gold for text */
+    --success: 150 35% 28%;
+    --success-foreground: 0 0% 98%;
+
+    --destructive: 0 72% 42%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 36 15% 87%;
+    --input: 36 15% 87%;
+    --ring: 40 48% 55%;
+    --radius: 0.25rem; /* sharper corners feel more luxe */
+  }
+
+  .dark {
+    --background: 330 20% 6%;
+    --foreground: 40 30% 94%;
+    --card: 330 15% 9%;
+    --card-foreground: 40 30% 94%;
+    --popover: 330 15% 9%;
+    --popover-foreground: 40 30% 94%;
+
+    --primary: 40 48% 60%;
+    --primary-foreground: 330 15% 8%;
+    --secondary: 330 12% 14%;
+    --secondary-foreground: 40 30% 94%;
+    --muted: 330 10% 15%;
+    --muted-foreground: 30 10% 65%;
+    --accent: 40 48% 60%;
+    --accent-foreground: 330 15% 8%;
+
+    --burgundy: 343 50% 35%;
+    --burgundy-foreground: 40 30% 94%;
+    --gold-text: 40 48% 65%;
+    --success: 150 35% 45%;
+    --success-foreground: 330 15% 8%;
+
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 330 10% 18%;
+    --input: 330 10% 18%;
+    --ring: 40 48% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings:
+      "rlig" 1,
+      "calt" 1;
+  }
+}
+
+@layer utilities {
+  .font-heading {
+    font-family: "Marcellus", Georgia, serif;
+  }
+  .font-body {
+    font-family: "Jost Variable", system-ui, sans-serif;
+  }
+  .text-balance {
+    text-wrap: balance;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}

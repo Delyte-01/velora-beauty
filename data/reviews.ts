@@ -1,0 +1,60 @@
+import type { Review } from '@/types';
+
+export const reviews: Review[] = [
+  {
+    id: 'r-1',
+    productId: 'p-hair-1',
+    author: 'Chioma O.',
+    rating: 5,
+    comment: 'Best braiding hair I have used. Very soft and did not itch at all.',
+    date: '2025-09-20',
+  },
+  {
+    id: 'r-2',
+    productId: 'p-hair-1',
+    author: 'Aisha M.',
+    rating: 5,
+    comment: 'Sealed beautifully with hot water. Will buy again.',
+    date: '2025-09-25',
+  },
+  {
+    id: 'r-3',
+    productId: 'p-frag-1',
+    author: 'Funke A.',
+    rating: 5,
+    comment: 'Compliments all day. The sillage is incredible.',
+    date: '2025-09-15',
+  },
+  {
+    id: 'r-4',
+    productId: 'p-skin-1',
+    author: 'Ngozi E.',
+    rating: 5,
+    comment: 'Gentle and does not dry my skin. My new daily cleanser.',
+    date: '2025-09-28',
+  },
+  {
+    id: 'r-5',
+    productId: 'p-makeup-1',
+    author: 'Bola T.',
+    rating: 4,
+    comment: 'Lovely colour and lasts hours. A bit drying by end of day.',
+    date: '2025-09-18',
+  },
+  {
+    id: 'r-6',
+    productId: 'p-acc-1',
+    author: 'Zainab K.',
+    rating: 5,
+    comment: 'Soft brushes and blends beautifully. Great value.',
+    date: '2025-09-22',
+  },
+  {
+    id: 'r-7',
+    productId: 'p-wig-1',
+    author: 'Ada N.',
+    rating: 5,
+    comment: 'The hairline looks so natural. Nobody could tell.',
+    date: '2025-09-30',
+  },
+];
